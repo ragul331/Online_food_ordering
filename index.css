@@ -1,0 +1,375 @@
+/* Override the default browser spacing */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Pacifico', cursive;
+    background-color:rgb(77, 77, 77);
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    z-index: 9999;
+}
+.navbar__brand{
+    width: 100px;
+}
+.brand__logo{
+    width: 100%;
+}
+.navbar__nav__items{
+    display: flex;
+}
+
+.container{
+    padding: 0px 20px;
+}
+
+.hero__image__container{
+    position: relative;
+    width: 100%;
+}
+.hero__image{
+    position:absolute;
+    margin-top: 65px;
+    width: 100%;
+    right: auto;
+    left: auto;
+    z-index: 2;
+    border-radius: 10px;
+}
+.hero__image__shape{
+    position: absolute; 
+    /* right: 50px; */
+}
+.hero__decription{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.hero__text{
+    font-size: 1.8rem;
+    line-height: 2.25rem;
+    color: azure;
+    font-weight: 900;
+}
+
+.video__footage__container{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.video__footage{
+    position: relative;
+}
+
+.video__footage::before{
+    background-image: linear-gradient(to right, rgb(161, 110, 110) 2%, rgb(80, 76, 76) 51%,rgb(250, 237, 237) 100%);
+    content: "";
+    top: 0;
+    right: 0;
+    transform: translate(-1rem,-1rem);
+    border-radius: 0.5rem;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.video__footage__text{
+    margin-top: 2rem;
+    color: rgba(240, 236, 8, 0.945);
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.button__primary{
+    background: linear-gradient(to right, rgb(129, 80, 80) 2%,rgb(80, 76, 76) 51%,rgb(250, 237, 237) 100%);
+    margin: 10px;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    font-weight: 600;
+    transition: 1s;
+    background-size: 200% auto;
+    color: black;
+    box-shadow: 0 0 20px white;
+    border-radius: 4px;
+    display: block;
+}
+.button__primary:hover{
+    padding: 10px 32px 10px 32px;
+    transition-delay: 0s;
+    transition-duration: 2s;
+    background: linear-gradient(to right, rgb(129, 80, 80) 2%,rgb(80, 76, 76) 51%,rgb(250, 237, 237) 100%);
+}
+
+.food__list__container{
+    position: relative;
+    margin: 5rem 0;
+}
+
+.food__menu__card__list{
+    width: 100%;
+}
+
+.food__menu__card__image{
+    border-radius: 6px 6px 0px 0px;
+    width: 100%;
+}
+
+.food__menu__card__details{
+    padding: 1rem;
+    margin: 1rem;
+    text-align: left;
+    color: white;
+}
+
+.food__menu__card__title{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color:aqua;
+    font-weight: 900;
+}
+.view__more__btn{
+    background-color: transparent;
+    width: 30%;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.view__more__btn:hover {
+    background-image: linear-gradient(to right, white 0%, white 0%, white 100%);
+    width: 50%;
+    letter-spacing: 2px;
+    transition: all 0.5s ease-in-out;
+}
+
+.restaurant__list__images__container{
+    margin-top: 3rem;
+}
+.restaurant__list__row1{
+    display: flex;
+    align-items: baseline;
+}
+.restaurant__list__row2{
+    margin-top: 10px;
+    display: flex;
+    align-items: baseline;
+    flex-direction: row-reverse;
+}
+.restaurant1,.restaurant3{
+    border-radius: 5px;
+    margin: 0 5px;
+    width: 150px;
+    height: 80px;
+}
+.restaurant2,.restaurant4{
+    border-radius: 5px;
+    margin: 0 5px;
+    width: 200px;
+    height: 100px;
+}
+.text-x1{
+    font-size: 1.8rem;
+    text-align: center;
+}
+.input__box {
+    margin-top: 10px;
+    width: 16rem;
+    height: 1.8rem;
+    font-family: cursive;
+    font-size: 1.2rem;
+    border-radius: 5px;
+  }
+  .search {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to left, rgb(129, 80, 80) 2%,rgb(80, 76, 76) 51%,rgb(250, 237, 237) 100%);
+  }
+  .secondary__btn {
+    margin-top: 1rem;
+    width: 8rem;
+    height: 3rem;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(to left, rgb(129, 80, 80) 2%,rgb(80, 76, 76) 51%,rgb(250, 237, 237) 100%);
+    transition: 0.2s;
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+  .secondary__btn:hover {
+    transition: all 0.2s ease-in;
+    width: 8.3rem;
+  
+    letter-spacing: 2px;
+  }
+  .update__section {
+    margin-top: 5rem;
+    background-image: linear-gradient(to right, rgb(129, 80, 80) 2%,rgb(80, 76, 76) 51%,rgb(250, 237, 237) 100%);
+  }
+  .update__content {
+    display: flex;
+    justify-content: center;
+  }
+  .update__text {
+    font-size: 2.8rem;
+    color: #000000;
+  }
+  .update__btn {
+    margin: 8px 0 0 10px;
+    width: 7rem;
+    height: 2rem;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(rgb(129, 80, 80) 2%,rgb(80, 76, 76) 51%,rgb(250, 237, 237) 100%);
+    transition: 0.2s;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .update__btn:hover {
+    transition: all 0.2s ease-in;
+    width: 7.8rem;
+  }
+  .footering {
+    margin-top: 13%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 8px 8px 0 0;
+    background-image: linear-gradient(to right,rgb(253, 253, 253) 2%,rgb(80, 76, 76) 51%,rgb(48, 34, 34) 100%);
+  }
+  .footering__list li {
+    list-style: none;
+    line-height: 2;
+  }
+  .footering__list li a {
+    text-decoration: none;
+    color: white;
+    font-family: cursive;
+  }
+  .logo__text {
+    font-family: Proxima Nova;
+    color: rgb(0, 0, 0);
+  }
+
+@media(min-width:1200px){
+    .navbar{
+        padding: 0 3rem;
+    }
+    .button__primary{
+        padding:  1rem 2rem;
+        font-size: 1rem;
+    }
+
+    .container{
+        padding: 0 200px;
+    }
+
+    .hero__container{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .hero__image{
+        margin-top: 100px;
+    }
+    .hero__text{
+        font-size: 3rem;
+        line-height: 1;
+    }
+    .video__footage__container{
+        display: flex;
+        flex-direction: column ;
+    }
+    .video__footage__text{
+        width:60%;
+    }
+    .food__list__container{
+        position: relative;
+        margin: 5rem 0;
+    }
+    .food__menu__card__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-top: 2rem;
+        margin-top: 2rem;
+    }
+    .food__menu__card{
+        flex-basis: 30%;
+        background-color: rgb(0, 0, 0);
+        border-radius: 6px;
+    }
+    .food__list__container{
+        position: relative;
+        margin: 5rem 0;
+    }
+    
+    .food__list__container__diagonal{
+        background: linear-gradient(to right, rgb(129, 80, 80) 2%,rgb(80, 76, 76) 51%,rgb(250, 237, 237) 100%);
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 100%;
+        width: 100%;
+        z-index: -3;
+        transform: skewY(-5deg);
+    }
+    .restaurant__list__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .restaurant__list__row1{
+        justify-content: center;
+    }
+    .restaurant__list__row2{
+        margin-top: 3px;
+        align-items: ;
+    }
+    .text-x1{
+        font-size: 3rem;
+    }
+    .view__more__btn {
+        margin-bottom: 1rem;
+        width: 90%;
+        border-radius: 10px;
+        transition: 0.5s;
+      }
+      .view__more__btn:hover {
+        width: 100%;
+      }
+      .secondary__btn {
+        margin-top: 1rem;
+        width: 7rem;
+        height: 2rem;
+        font-size: 1.3rem;
+      }
+      .secondary__btn:hover {
+        width: 7.3rem;
+        letter-spacing: 2px;
+      }
+      .footering__list li {
+        font-size: rem;
+      }
+      .logo__text {
+        font-size: 2.5rem;
+      }
+    }
+}
